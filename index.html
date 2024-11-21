@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PartyManagerBuild.data",
-        frameworkUrl: "Build/PartyManagerBuild.framework.js",
-        codeUrl: "Build/PartyManagerBuild.wasm",
+        dataUrl: "Build/PartyManagerBuild.data.br",
+        frameworkUrl: "Build/PartyManagerBuild.framework.js.br",
+        codeUrl: "Build/PartyManagerBuild.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PartyManager",
@@ -35,22 +35,6 @@
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
-
-      function CopyTextToClipboard(text) {
-        // Crea un elemento de texto temporal
-        var tempInput = document.createElement("textarea");
-        tempInput.value = text; // Asigna el texto a copiar
-        document.body.appendChild(tempInput);
-
-        // Selecciona el texto y ejecuta el comando de copiar
-        tempInput.select();
-        document.execCommand("copy");
-
-        // Elimina el elemento temporal
-        document.body.removeChild(tempInput);
-
-        console.log("Texto copiado al portapapeles: " + text);
-    }
     </script>
   </body>
 </html>
